@@ -1,6 +1,23 @@
-@ABMProductos___Base_de_Datos_HostAddress = http://localhost:5226
+### Crear un producto
+POST http://localhost:5226/api/products
+Content-Type: application/json
 
-GET {{ABMProductos___Base_de_Datos_HostAddress}}/weatherforecast/
-Accept: application/json
+{
+  "name": "Parlante portátil",
+  "price": 25000
+}
 
-###
+### Consultar los productos
+GET http://localhost:5226/api/products
+
+### Modificar el producto
+PUT http://localhost:5226/api/products/1
+Content-Type: application/json
+
+{
+  "name": "Parlante portátil",
+  "price": 30000
+}
+
+### Eliminar el producto
+DELETE http://localhost:5226/api/products/1
