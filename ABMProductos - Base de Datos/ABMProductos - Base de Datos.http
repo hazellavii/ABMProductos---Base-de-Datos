@@ -1,0 +1,6 @@
+@ABMProductos___Base_de_Datos_HostAddress = http://localhost:5226
+
+GET {{ABMProductos___Base_de_Datos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
