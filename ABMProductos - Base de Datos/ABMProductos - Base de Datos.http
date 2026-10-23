@@ -21,3 +21,10 @@ Content-Type: application/json
 
 ### Eliminar el producto
 DELETE http://localhost:5226/api/products/1
+
+
+### Buscar por nombre
+GET http://localhost:5226/api/products/search?name=PARLANTE
+
+### Estadísticas
+GET http://localhost:5226/api/products/stats
